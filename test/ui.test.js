@@ -32,5 +32,5 @@ test('Verify "All Books" link is visible', async ({page}) =>{
     await page.click('input[type="submit"]');
     const allBooksLink = await page.$('a[href="/catalog"]');
     const isAllBooksLinkVisible = await allBooksLink.isVisible();
-    expect(isAllBooksLinkVisible).toBe(true);
+    expect(isAllBooksLinkVisible).toBe(true)
 });
